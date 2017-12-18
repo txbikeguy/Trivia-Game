@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Star-Jedi';
+    src: url("Star-Jedi-Font/starjedi-webfont.woff2") format('woff2'),
+         url("Star-Jedi-Font/starjedi-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-image: url("..//Images/deathstar.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	background: inherit;
+	color: #dcdcdc;
+	padding-top: 7px;
+	font-family: "Star-Jedi", Arial, sans-serif;
+	font-size: 85px;
+	letter-spacing: 3px;
+	clear: both;
+}
+
+.game {
+	background: inherit;
+	display: none;
+	position: relative;
+	top: 7%;
+	left: 16.5%;
+	width:65.2vw;
+    height:60vh;
+    text-align: center;
+    border: 6px ridge #dcdcdc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+div.main {
+  height:100vh;
+  overflow:hidden;
+}
+div.main h1 {
+  animation: 7s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+	h1 {
+		font-size: 55px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	h1 {
+		font-size: 74px;
+	}
+}
