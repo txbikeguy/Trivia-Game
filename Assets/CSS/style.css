@@ -1,9 +1,18 @@
 @font-face {
-    font-family: 'Star-Jedi';
-    src: url("Star-Jedi-Font/starjedi-webfont.woff2") format('woff2'),
-         url("Star-Jedi-Font/starjedi-webfont.woff") format('woff');
+    font-family: "Star-Jedi";
+    src: url("Fonts/starjedi-webfont.woff2") format('woff2'),
+         url("Fonts/starjedi-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Anakin-Mono";
+    src: url("Fonts/anakinmono-webfont.woff2") format('woff2'),
+         url("Fonts/anakinmono-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body {
@@ -24,6 +33,23 @@ h1 {
 	clear: both;
 }
 
+h2 {
+	font-family: "Anakin-Mono", Arial, sans-serif;
+	color: #dcdcdc;
+	padding-top: 10px;
+}
+
+#answers p  {
+	font-family: "Anakin-Mono", Arial, sans-serif;
+	color: #dcdcdc;
+	font-size: 20px;
+	line-height: 100%;
+}
+
+#start {
+	font-family: "Anakin-Mono", Arial, sans-serif;
+}
+
 .game {
 	background: inherit;
 	display: none;
@@ -36,6 +62,12 @@ h1 {
     border: 6px ridge #dcdcdc;
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+#timer {
+	background: inherit;
+	color: #dcdcdc;
+	font-size: 36px;
 }
 
 
@@ -60,14 +92,28 @@ div.main h1 {
   }
 }
 
-@media only screen and (max-width: 720px) {
+/* Cant seem to actually make this smallest size adjustment work on my computer */
+/*@media only screen and (max-width: 720px) {
 	h1 {
 		font-size: 55px;
 	}
+	h2 {
+		font-size: 25px;
+	}
+	#answers p {
+		font-size: 15px;
+	}
 }
+*/
 
 @media only screen and (max-width: 900px) {
 	h1 {
-		font-size: 74px;
+		font-size: 45px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	#answers p {
+		font-size: 15px;
 	}
 }
