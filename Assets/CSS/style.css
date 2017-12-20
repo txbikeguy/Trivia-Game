@@ -39,11 +39,22 @@ h2 {
 	padding-top: 10px;
 }
 
-#answers p  {
+h3 {
 	font-family: "Anakin-Mono", Arial, sans-serif;
 	color: #dcdcdc;
-	font-size: 20px;
-	line-height: 100%;
+	padding-top: 10px;
+}
+
+button {
+	font-family: "Anakin-Mono", Arial, sans-serif;
+	color: #dcdcdc;
+	background-color: inherit;
+	text-align: center;
+	font-size: 24px;
+}
+
+img {
+	width: 400px;
 }
 
 #start {
@@ -68,6 +79,8 @@ h2 {
 	background: inherit;
 	color: #dcdcdc;
 	font-size: 36px;
+	font-family: "Anakin-Mono", Arial, sans-serif;
+	text-align: center;
 }
 
 
@@ -115,5 +128,8 @@ div.main h1 {
 	}
 	#answers p {
 		font-size: 15px;
+	}
+	img {
+		width: 200px;
 	}
 }
