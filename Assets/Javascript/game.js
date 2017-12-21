@@ -106,12 +106,15 @@ var game = {
 	},
 	results: function() {
 		clearInterval(timer);
-		if (game.correct > 5) {
+		if (game.correct === 10) {
+			$(".game").html("<h2>YOU ARE A JEDI MASTER!</h2");
+		}
+		else if (game.correct > 5) {
 			$(".game").html("<h2>THE FORCE IS STRONG WITH YOU!</h2>");
 		}
 		else {
 			$(".game").html("<h2>YOU HAVE MUCH TO LEARN...</h2>");
-		}
+		};
 		$("#timer").hide();
 		$(".game").append("<h2>Correct Answers: " + game.correct + "</h2>");
 		$(".game").append("<h2>Incorrect Answers: " + game.incorrect + "</h2>");
