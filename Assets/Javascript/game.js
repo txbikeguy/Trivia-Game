@@ -54,7 +54,7 @@ var content = [{
 		answers: ["A) His parents", "B) Wookies", "C) Yoda", "D) His Aunt and Uncle"],
 		correct: "D) His Aunt and Uncle"
 	},{
-		question: "Who ultimately kills the Emporer?",
+		question: "Who ultimately kills the Emperor?",
 		answers: ["A) Luke Skywalker", "B) Han Solo", "C) Leia Organa", "D) Anakin Skywalker"],
 		correct: "D) Anakin Skywalker"
 	}
