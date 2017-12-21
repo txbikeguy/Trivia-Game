@@ -106,7 +106,7 @@ var game = {
 	},
 	results: function() {
 		clearInterval(timer);
-		if (game.correct === 10) {
+		if (game.correct = 10) {
 			$(".game").html("<h2>YOU ARE A JEDI MASTER!</h2");
 		}
 		else if (game.correct > 5) {
