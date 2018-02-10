@@ -106,7 +106,7 @@ var game = {
 	},
 	results: function() {
 		clearInterval(timer);
-		if (game.correct = 10) {
+		if (game.correct === 10) {
 			$(".game").html("<h2>YOU ARE A JEDI MASTER!</h2");
 		}
 		else if (game.correct > 5) {
@@ -123,7 +123,7 @@ var game = {
 	},
 	clicked: function(e) {
 		clearInterval(timer);
-		if($(e.target).data("name") == content[game.currentQuestion].correct) {
+		if($(e.target).data("name") === content[game.currentQuestion].correct) {
 			game.answeredCorrectly();
 		}
 		else {
@@ -167,86 +167,3 @@ var game = {
 	$("#timer").show();
 	},
 };
-
-
-
-// I wrote the following code below all on my own and had a decent start at a working game but got really stuck when trying to figure out how to make 
-// the next question show up after the first. I was rapidly running out of time so I decided to try to replicate the video answer posted in the repo 
-// to 1. have more of a working game to turn in and 2. to actually learn what I was doing incorrectly. My biggest problem so far is not feeling like
-// I know how to structure things. Javascript seems so out of order to my brain. 
-
-
-
-
-
-
-
-// var timeUp = false;
-
-// $(function(){
-//    setTimeout(function(){
-//      $(".game").show();
-//    },7500);
-// });
-
-// function startScreen() {
-// 	$(".game").html("<h2>You will have 15 seconds to answer each question</h2><br><h2>Click the Start Button to begin</h2><br><button id='start'>START</button>");
-// 	$("#start").on("click", function() {
-// 		nextQuestion ();
-// 	});
-// };
-
-// 	function q1() {
-// 			$(".game").html("<h2>" + content.question1.question + "</h2><br><div id='answers'><p>" + content.question1.answers[0] + "</p><br><p>" + content.question1.answers[1] + "</p><br><p id='right'>" + content.question1.answers[2] + "</p><br><p>" + content.question1.answers[3] + "</p></div><div id='timer'></div>");
-// 			timer();
-// 	};
-
-// 	function q2() {
-// 			$(".game").html("<h2>" + content.question2.question + "</h2><br><div id='answers'><p>" + content.question2.answers[0] + "</p><br><p id='right'>" + content.question2.answers[1] + "</p><br><p>" + content.question2.answers[2] + "</p><br><p>" + content.question2.answers[3] + "</p></div><div id='timer'></div>");
-// 			timer();
-// 	};
-
-// 	function q3() {
-// 			$(".game").html("<h2>" + content.question3.question + "</h2><br><div id='answers'><p>" + content.question3.answers[0] + "</p><br><p>" + content.question3.answers[1] + "</p><br><p>" + content.question3.answers[2] + "</p><br><p id='right'>" + content.question3.answers[3] + "</p></div><div id='timer'></div>");
-// 			timer();
-// 	};
-
-// 	function q4() {
-// 			$(".game").html("<h2>" + content.question4.question + "</h2><br><div id='answers'><p>" + content.question4.answers[0] + "</p><br><p id='right'>" + content.question4.answers[1] + "</p><br><p>" + content.question4.answers[2] + "</p><br><p>" + content.question4.answers[3] + "</p></div><div id='timer'></div>");
-// 			timer();
-// 	};
-
-// 	function q5() {
-// 			$(".game").html("<h2>" + content.question5.question + "</h2><br><div id='answers'><p id='right'>" + content.question5.answers[0] + "</p><br><p>" + content.question5.answers[1] + "</p><br><p>" + content.question5.answers[2] + "</p><br><p>" + content.question5.answers[3] + "</p></div><div id='timer'></div>");
-// 			timer();
-// 	};
-
-// function nextQuestion() {
-// 	q1();
-// };
-
-// function timer() {
-// 	var timeLeft = 15;
-//     var countDown = setInterval(function(){
-//     $("#timer").text(timeLeft);
-//         timeLeft--;
-//     if (timeLeft === 0) {
-//     	timesUp();
-//         clearInterval(countDown);
-//     	}
-//     }, 1000);
-//     $("#timer").show();
-// };
-
-
-// function timesUp() {
-// 	$(".game").html("<h2>YOUR TIME IS UP!</h2");
-// 	setTimeout(function() {
-// 		nextQuestion();
-// 	}, 4000);
-
-// };
-
-// startScreen();
-
-
